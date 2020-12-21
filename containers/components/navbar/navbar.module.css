@@ -1,0 +1,17 @@
+.logo-container {
+  height: 64px;
+}
+
+.logo {
+  height: 80%;
+  margin: 20%;
+}
+
+.toolBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolBarText {
+  font-weight: 300 !important;
+}

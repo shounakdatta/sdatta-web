@@ -1,0 +1,29 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 100;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.floating-paper {
+  animation: ease-in 0.5s fadein forwards;
+}
+
+.floating-paper:hover {
+  transform: scale(1.5);
+}
+
+.root {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 100%);
+  cursor: pointer;
+}
+
+.root:hover {
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 50%, #380036 100%);
+}

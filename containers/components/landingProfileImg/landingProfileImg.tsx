@@ -1,19 +1,15 @@
 import React from "react";
 import "./landingProfileImg.css";
 
-const LandingProfileImg = () => {
+const LandingProfileImg = (props) => {
+  const { imgPath, alt } = props;
   return (
     <div className="profile-img-container">
       <img
         className="image"
-        src="/shounak.jpg"
-        alt="Shounak's Profile Picture"
+        src={imgPath ?? "/shounak.jpg"}
+        alt={alt ?? "Shounak's Profile Picture"}
       />
-      {/* <img
-        className="shadow"
-        src="/shounak.jpg"
-        alt="Shounak's Profile Reflection"
-      /> */}
     </div>
   );
 };
