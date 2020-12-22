@@ -10,10 +10,10 @@ const AboutView = () => {
     <div className="about-container">
       <div className="about-content">
         <Grid container spacing={3}>
-          <Grid item xs={4}>
+          <Grid item lg={4} md={6} sm={12} xs={12}>
             <LandingProfileImg />
           </Grid>
-          <Grid item xs={8}>
+          <Grid item lg={8} md={6} sm={12} xs={12}>
             {/* <FloatingPaper>
               
             </FloatingPaper> */}
