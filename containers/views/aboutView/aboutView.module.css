@@ -1,0 +1,24 @@
+.about-container {
+  min-height: 400px;
+  padding: 5%;
+  width: 90%;
+  background-color: #eeeeee;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  width: 100%;
+}
+
+.paper-header {
+  font-weight: 300 !important;
+  margin: 0px !important;
+}
+
+.paper-text {
+  font-weight: 300 !important;
+  margin-top: 2% !important;
+}
