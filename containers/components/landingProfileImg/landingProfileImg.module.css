@@ -1,6 +1,5 @@
 .profile-img-container {
-  height: 100%;
-  width: 30%;
+  min-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +19,7 @@
 
 .profile-img-container .image {
   border-radius: 10px;
-  height: 70%;
+  height: 100%;
   width: auto;
   opacity: 0;
   animation: ease-in 0.5s fadein forwards;

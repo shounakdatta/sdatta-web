@@ -1,5 +1,5 @@
 import React from "react";
-import "./landingProfileImg.css";
+import "./landingProfileImg.module.css";
 
 const LandingProfileImg = (props) => {
   const { imgPath, alt } = props;

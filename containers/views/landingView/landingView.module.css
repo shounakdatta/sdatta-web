@@ -1,0 +1,163 @@
+.landing-container {
+  min-height: 700px;
+  width: 100%;
+  background-color: #010020;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.particle-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.particle-effect {
+  height: 100%;
+  width: 100%;
+}
+
+.landing-content {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 0% 2%;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.content-half {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-full {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-subtitle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-sub-text {
+  font-weight: 300 !important;
+}
+
+.quick-link-container {
+  margin-top: 2% !important;
+}
+
+.paper-header {
+  font-weight: 300 !important;
+  margin-top: 3% !important;
+}
+
+.floating-image-container {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.floating-image {
+  max-width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 2560px) {
+  .landing-container {
+    min-height: 650px;
+  }
+
+  .floating-image-container {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .landing-container {
+    min-height: 550px;
+  }
+
+  .quick-link-container {
+    margin-top: 4% !important;
+  }
+
+  .floating-image-container {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+  .landing-container {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .floating-image-container {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .landing-container {
+    min-height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .floating-image-container {
+    height: 45%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome-title-container {
+    margin-top: 10%;
+  }
+
+  .landing-container {
+    min-height: 1100px;
+  }
+
+  .floating-image-container {
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .landing-container {
+    min-height: 1050px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .welcome-title-container {
+    margin-top: 15%;
+  }
+
+  .landing-container {
+    min-height: 1000px;
+  }
+}

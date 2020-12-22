@@ -3,10 +3,18 @@ import Paper from "@material-ui/core/Paper";
 import "./floatingPaper.module.css";
 
 const FloatingPaper = (props) => {
-  const { children } = props;
+  const { children, colored = false, gridPos = 1 } = props;
   return (
-    <div className="floating-paper">
-      <Paper classes={{ root: "root" }}>{children}</Paper>
+    <div className={"floating-paper" + gridPos}>
+      <Paper classes={{ root: "root" + (colored ? "-colored" : "") }}>
+        <div
+          className={
+            "floating-" + (colored ? "colored-" : "") + "child-container"
+          }
+        >
+          {children}
+        </div>
+      </Paper>
     </div>
   );
 };

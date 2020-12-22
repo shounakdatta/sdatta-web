@@ -9,7 +9,11 @@ import "./navbar.module.css";
 export default function Navbar() {
   return (
     <div>
-      <AppBar position="absolute" color="transparent">
+      <AppBar
+        position="absolute"
+        color="transparent"
+        classes={{ root: "toolBarRoot" }}
+      >
         <Toolbar className="toolBar">
           <Typography
             variant="h6"
