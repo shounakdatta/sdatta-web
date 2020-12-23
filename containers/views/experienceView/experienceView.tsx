@@ -24,7 +24,7 @@ const ExperienceView = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container spacing={10}>
+          <Grid container spacing={5} classes={{ root: "exp-content-root" }}>
             <Grid
               item
               lg={5}
@@ -35,8 +35,8 @@ const ExperienceView = () => {
             >
               <div className="carousel-container">
                 <ReactCardCarousel
-                  autoplay={false}
-                  autoplay_speed={5000}
+                  autoplay={true}
+                  autoplay_speed={10000}
                   spread="narrow"
                   alignment={
                     (typeof window !== "undefined" && window.innerWidth) > 500
@@ -53,7 +53,6 @@ const ExperienceView = () => {
                       imgContainerCss,
                       paperHeader,
                       paperSubHeader,
-                      expText,
                     } = config;
                     return (
                       <FloatingPaper

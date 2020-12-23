@@ -1,5 +1,3 @@
-import React from "react";
-
 interface Image {
   src: string;
   alt: string;

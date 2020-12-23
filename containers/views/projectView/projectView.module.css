@@ -1,0 +1,49 @@
+.proj-container {
+  min-height: 350px;
+  height: 100%;
+  padding: 5%;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+.proj-content {
+  width: 100%;
+}
+
+.proj-content-root {
+  margin-top: 3% !important;
+}
+
+.proj-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  font-weight: 300 !important;
+}
+
+.proj-text {
+  font-weight: 300 !important;
+  margin-top: 2% !important;
+  animation: ease-in 0.3s fadein forwards;
+}
+
+@media only screen and (max-width: 960px) {
+  .proj-container {
+    min-height: 750px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .proj-container {
+    min-height: 900px;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .proj-container {
+    min-height: 950px;
+  }
+}

@@ -1,6 +1,11 @@
 import { NextPage } from "next";
 import { ThemeProvider } from "@material-ui/core/styles";
-import { LandingView, AboutView, ExperienceView } from "../containers/views";
+import {
+  LandingView,
+  AboutView,
+  ExperienceView,
+  ProjectView,
+} from "../containers/views";
 import { Navbar } from "../containers/components";
 import theme from "./theme";
 import "../public/css/index.css";
@@ -13,6 +18,7 @@ const Home: NextPage = () => {
         <LandingView />
         <AboutView />
         <ExperienceView />
+        <ProjectView />
       </div>
     </ThemeProvider>
   );

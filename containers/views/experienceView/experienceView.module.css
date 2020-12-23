@@ -22,6 +22,10 @@
   width: 100%;
 }
 
+.exp-content-root {
+  margin-top: 1% !important;
+}
+
 .carousel-container {
   position: relative;
   width: 100%;
@@ -68,14 +72,14 @@
   list-style-position: inside;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .carousel-root {
     margin-top: 15% !important;
     margin-bottom: 5% !important;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 510px) {
   .carousel-root {
     margin-top: 35% !important;
     margin-bottom: 15% !important;
