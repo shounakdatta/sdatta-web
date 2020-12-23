@@ -7,7 +7,7 @@ const LandingProfileImg = (props) => {
     <div className="profile-img-container">
       <img
         className="image"
-        src={imgPath ?? "/shounak.jpg"}
+        src={imgPath ?? "/assets/shounak.jpg"}
         alt={alt ?? "Shounak's Profile Picture"}
       />
     </div>

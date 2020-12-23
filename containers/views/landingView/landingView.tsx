@@ -42,7 +42,11 @@ const LandingView = () => {
           <Grid item lg={4} md={4} sm={4} xs={10}>
             <FloatingPaper colored={true} gridPos={1}>
               <div className="floating-image-container">
-                <img src="/sdev-logo.png" alt="" className="floating-image" />
+                <img
+                  src="/assets/sdev-logo.png"
+                  alt=""
+                  className="floating-image"
+                />
               </div>
               <Typography
                 color="textPrimary"
@@ -67,7 +71,11 @@ const LandingView = () => {
           <Grid item lg={4} md={4} sm={4} xs={10}>
             <FloatingPaper colored={true} gridPos={2}>
               <div className="floating-image-container">
-                <img src="/experience4.jpg" alt="" className="floating-image" />
+                <img
+                  src="/assets/experience4.jpg"
+                  alt=""
+                  className="floating-image"
+                />
               </div>
               <Typography
                 color="textPrimary"
@@ -92,7 +100,11 @@ const LandingView = () => {
           <Grid item lg={4} md={4} sm={4} xs={10}>
             <FloatingPaper colored={true} gridPos={3}>
               <div className="floating-image-container">
-                <img src="/projects2.png" alt="" className="floating-image" />
+                <img
+                  src="/assets/projects2.png"
+                  alt=""
+                  className="floating-image"
+                />
               </div>
               <Typography
                 color="textPrimary"

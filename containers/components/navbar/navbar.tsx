@@ -24,7 +24,7 @@ export default function Navbar() {
           </Typography>
           <div className="logo-container" style={{ height: 64 }}>
             <img
-              src="/sign.png"
+              src="/assets/sign.png"
               alt=""
               className="logo"
               style={{ height: "80%", margin: "20%" }}

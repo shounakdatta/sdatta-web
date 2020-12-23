@@ -3,9 +3,9 @@ import Paper from "@material-ui/core/Paper";
 import "./floatingPaper.module.css";
 
 const FloatingPaper = (props) => {
-  const { children, colored = false, gridPos = 1 } = props;
+  const { children, colored = false, gridPos = 1, customCss = {} } = props;
   return (
-    <div className={"floating-paper" + gridPos}>
+    <div className={"floating-paper-" + gridPos} style={{ ...customCss }}>
       <Paper classes={{ root: "root" + (colored ? "-colored" : "") }}>
         <div
           className={
