@@ -27,7 +27,7 @@ export default function Navbar() {
               src="/assets/sign.png"
               alt=""
               className="logo"
-              style={{ height: "80%", margin: "20%" }}
+              style={{ height: "80%", margin: "20% 0%" }}
             />
           </div>
         </Toolbar>

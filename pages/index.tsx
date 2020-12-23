@@ -5,6 +5,7 @@ import {
   AboutView,
   ExperienceView,
   ProjectView,
+  FooterView,
 } from "../containers/views";
 import { Navbar } from "../containers/components";
 import theme from "./theme";
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         <AboutView />
         <ExperienceView />
         <ProjectView />
+        <FooterView />
       </div>
     </ThemeProvider>
   );

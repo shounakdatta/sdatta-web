@@ -1,0 +1,34 @@
+.footer-container {
+  width: 90%;
+  padding: 5%;
+  background-color: #380036;
+}
+
+.footer-header {
+  font-weight: 300 !important;
+  margin-bottom: 3% !important;
+  text-decoration: underline;
+}
+
+.footer-text {
+  font-weight: 300 !important;
+}
+
+.footer-text-link {
+  text-decoration: none;
+}
+
+.left-social {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.center-social {
+  display: flex;
+  justify-content: center;
+}
+
+.right-social {
+  display: flex;
+  justify-content: flex-start;
+}

@@ -24,21 +24,30 @@ const ProjectView = () => {
           </Grid>
         </Grid>
         <Grid container spacing={10} classes={{ root: "proj-content-root" }}>
-          <Grid item lg={7} md={6} sm={12} xs={12}>
-            {ProjectConfig.map((proj, index) => {
-              return (
-                projIndex == index &&
-                proj.description.map((text) => (
-                  <Typography
-                    color="primary"
-                    variant="h6"
-                    className="proj-text"
-                  >
-                    {text}
-                  </Typography>
-                ))
-              );
-            })}
+          <Grid
+            item
+            lg={7}
+            md={6}
+            sm={12}
+            xs={12}
+            classes={{ root: "proj-text-root" }}
+          >
+            <div>
+              {ProjectConfig.map((proj, index) => {
+                return (
+                  projIndex == index &&
+                  proj.description.map((text) => (
+                    <Typography
+                      color="primary"
+                      variant="h6"
+                      className="proj-text"
+                    >
+                      {text}
+                    </Typography>
+                  ))
+                );
+              })}
+            </div>
           </Grid>
           <Grid
             item

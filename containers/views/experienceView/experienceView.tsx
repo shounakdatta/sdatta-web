@@ -89,7 +89,14 @@ const ExperienceView = () => {
                 </ReactCardCarousel>
               </div>
             </Grid>
-            <Grid item lg={7} md={6} sm={12} xs={12}>
+            <Grid
+              item
+              lg={7}
+              md={6}
+              sm={12}
+              xs={12}
+              classes={{ root: "exp-text-root" }}
+            >
               <ul className="exp-list">
                 {ExperienceConfig.map((exp, index) => {
                   return (
