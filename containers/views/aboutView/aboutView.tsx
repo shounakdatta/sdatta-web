@@ -1,8 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { LandingProfileImg, FloatingPaper } from "../../components";
+import { LandingProfileImg } from "../../components";
 import "./aboutView.module.css";
 
 const AboutView = () => {
@@ -14,17 +13,14 @@ const AboutView = () => {
             <LandingProfileImg />
           </Grid>
           <Grid item lg={8} md={6} sm={12} xs={12}>
-            {/* <FloatingPaper>
-              
-            </FloatingPaper> */}
             <Typography
               color="primary"
               variant="h4"
-              classes={{ root: "paper-header" }}
+              classes={{ root: "about-header" }}
             >
               About Me
             </Typography>
-            <Typography color="primary" variant="h6" className="paper-text">
+            <Typography color="primary" variant="h6" className="about-text">
               Problems and solutions go hand in hand. <br />
               It is my passion to bring them together. I innovate. <br />
               <br />
