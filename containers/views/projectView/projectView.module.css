@@ -89,9 +89,13 @@
   }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 450px) {
   .proj-container {
     height: 950px;
+  }
+
+  .proj-text-root {
+    margin-bottom: 10% !important;
   }
 
   .proj-back-tint {
