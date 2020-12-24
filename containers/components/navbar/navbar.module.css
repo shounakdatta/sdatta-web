@@ -1,14 +1,17 @@
 .logo-container {
   height: 64px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  height: 80%;
-  margin: 20%;
+  height: 75%;
+  margin: 0%;
 }
 
 .toolBarRoot {
   box-shadow: none !important;
+  background-color: rgba(1, 0, 32, 0.9) !important;
 }
 
 .toolBar {
@@ -18,4 +21,14 @@
 
 .toolBarText {
   font-weight: 300 !important;
+}
+
+.link-container {
+  display: flex;
+  justify-content: flex-end;
+  widows: 50%;
+}
+
+.navbar-link {
+  margin-left: 20%;
 }

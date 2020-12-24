@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Particles from "react-particles-js";
@@ -40,91 +41,127 @@ const LandingView = () => {
           className="quick-link-container"
         >
           <Grid item lg={4} md={4} sm={4} xs={10}>
-            <FloatingPaper colored={true} gridPos={1}>
-              <div className="floating-image-container">
-                <img
-                  src="/assets/sdev-logo.png"
-                  alt=""
-                  className="floating-image"
-                />
-              </div>
-              <Typography
-                color="textPrimary"
-                variant="h6"
-                classes={{ root: "paper-header" }}
-              >
-                About Me
-              </Typography>
-              <ul style={{ listStylePosition: "inside" }}>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; Who am I
+            <ScrollLink
+              activeClass="active"
+              to="aboutScroll"
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={0}
+              duration={500}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+            >
+              <FloatingPaper colored={true} gridPos={1}>
+                <div className="floating-image-container">
+                  <img
+                    src="/assets/sdev-logo.png"
+                    alt=""
+                    className="floating-image"
+                  />
+                </div>
+                <Typography
+                  color="textPrimary"
+                  variant="h6"
+                  classes={{ root: "paper-header" }}
+                >
+                  About Me
                 </Typography>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; My Qualifications
-                </Typography>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; My Aspirations
-                </Typography>
-              </ul>
-            </FloatingPaper>
+                <ul style={{ listStylePosition: "inside" }}>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; Who am I
+                  </Typography>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; My Qualifications
+                  </Typography>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; My Aspirations
+                  </Typography>
+                </ul>
+              </FloatingPaper>
+            </ScrollLink>
           </Grid>
           <Grid item lg={4} md={4} sm={4} xs={10}>
-            <FloatingPaper colored={true} gridPos={2}>
-              <div className="floating-image-container">
-                <img
-                  src="/assets/experience4.jpg"
-                  alt=""
-                  className="floating-image"
-                />
-              </div>
-              <Typography
-                color="textPrimary"
-                variant="h6"
-                classes={{ root: "paper-header" }}
-              >
-                Work Experience
-              </Typography>
-              <ul style={{ listStylePosition: "inside" }}>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; BMO Capital Markets
+            <ScrollLink
+              activeClass="active"
+              to="experienceScroll"
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={0}
+              duration={500}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+            >
+              <FloatingPaper colored={true} gridPos={2}>
+                <div className="floating-image-container">
+                  <img
+                    src="/assets/experience4.jpg"
+                    alt=""
+                    className="floating-image"
+                  />
+                </div>
+                <Typography
+                  color="textPrimary"
+                  variant="h6"
+                  classes={{ root: "paper-header" }}
+                >
+                  Work Experience
                 </Typography>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; Secret Mission Software
-                </Typography>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; Innovasium Digital
-                </Typography>
-              </ul>
-            </FloatingPaper>
+                <ul style={{ listStylePosition: "inside" }}>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; BMO Capital Markets
+                  </Typography>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; Secret Mission Software
+                  </Typography>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; Innovasium Digital
+                  </Typography>
+                </ul>
+              </FloatingPaper>
+            </ScrollLink>
           </Grid>
           <Grid item lg={4} md={4} sm={4} xs={10}>
-            <FloatingPaper colored={true} gridPos={3}>
-              <div className="floating-image-container">
-                <img
-                  src="/assets/projects2.png"
-                  alt=""
-                  className="floating-image"
-                />
-              </div>
-              <Typography
-                color="textPrimary"
-                variant="h6"
-                classes={{ root: "paper-header" }}
-              >
-                Projects
-              </Typography>
-              <ul style={{ listStylePosition: "inside" }}>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; DoCD
+            <ScrollLink
+              activeClass="active"
+              to="projectScroll"
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={0}
+              duration={500}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+            >
+              <FloatingPaper colored={true} gridPos={3}>
+                <div className="floating-image-container">
+                  <img
+                    src="/assets/projects2.png"
+                    alt=""
+                    className="floating-image"
+                  />
+                </div>
+                <Typography
+                  color="textPrimary"
+                  variant="h6"
+                  classes={{ root: "paper-header" }}
+                >
+                  Projects
                 </Typography>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; Realitics
-                </Typography>
-                <Typography color="textPrimary" variant="body1">
-                  &#9889; FoodSnap
-                </Typography>
-              </ul>
-            </FloatingPaper>
+                <ul style={{ listStylePosition: "inside" }}>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; DoCD
+                  </Typography>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; Realitics
+                  </Typography>
+                  <Typography color="textPrimary" variant="body1">
+                    &#9889; FoodSnap
+                  </Typography>
+                </ul>
+              </FloatingPaper>
+            </ScrollLink>
           </Grid>
         </Grid>
       </div>
