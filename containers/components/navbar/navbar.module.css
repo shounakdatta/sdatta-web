@@ -21,6 +21,7 @@
 
 .toolBarText {
   font-weight: 300 !important;
+  cursor: pointer;
 }
 
 .link-container {
