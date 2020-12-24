@@ -8,7 +8,7 @@ import {
   FooterView,
 } from "../containers/views";
 import { Navbar } from "../containers/components";
-import theme from "./theme";
+import theme from "../theme";
 import "../public/css/index.css";
 
 const Home: NextPage = () => {
