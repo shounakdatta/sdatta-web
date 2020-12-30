@@ -29,7 +29,7 @@
 .link-container {
   display: flex;
   justify-content: flex-end;
-  widows: 50%;
+  margin-right: 2%;
 }
 
 .navbar-link {

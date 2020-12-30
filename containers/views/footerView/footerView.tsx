@@ -1,12 +1,41 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
+import MailIcon from "@material-ui/icons/Mail";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import Typography from "@material-ui/core/Typography";
 import "./footerView.module.css";
 
 const FooterView = () => {
   return (
     <div className="footer-container">
-      <Grid container spacing={2}>
+      <Typography
+        color="textPrimary"
+        variant="h6"
+        classes={{ root: "footer-text" }}
+        align="center"
+      >
+        &#169; Shounak Datta
+      </Typography>
+      <div className="footer-link-container">
+        <a className="footer-link" href="mailto:shounak14datta@gmail.com">
+          <MailIcon style={{ height: 25, color: "#ffffff" }} />
+        </a>
+        <a
+          className="footer-link"
+          href="https://www.linkedin.com/in/shounakdatta/"
+        >
+          <LinkedInIcon style={{ height: 25, color: "#ffffff" }} />
+        </a>
+        <a className="footer-link" href="https://github.com/shounakdatta">
+          <GitHubIcon style={{ height: 25, color: "#ffffff" }} />
+        </a>
+        <a className="footer-link" href="https://twitter.com/datta_shounak">
+          <TwitterIcon style={{ height: 25, color: "#ffffff" }} />
+        </a>
+      </div>
+
+      {/* <Grid container spacing={2}>
         <Grid item lg={4} md={4} sm={12} xs={12}>
           <Typography
             color="textPrimary"
@@ -88,6 +117,7 @@ const FooterView = () => {
           </Grid>
         </Grid>
       </Grid>
+     */}
     </div>
   );
 };

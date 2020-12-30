@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import { ThemeProvider } from "@material-ui/core/styles";
 import {
   LandingView,
@@ -14,6 +15,13 @@ import "../public/css/index.css";
 const Home: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>
+      <Head>
+        <link
+          rel="shortcut icon"
+          href="/assets/favicon.ico"
+          type="image/x-icon"
+        />
+      </Head>
       <div className="home-container">
         <Navbar />
         <LandingView />

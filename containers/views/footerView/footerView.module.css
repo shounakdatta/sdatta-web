@@ -1,7 +1,18 @@
 .footer-container {
-  width: 90%;
-  padding: 5%;
-  background-color: #380036;
+  width: 96%;
+  padding: 2%;
+  background-color: rgba(1, 0, 32, 0.9);
+}
+
+.footer-link-container {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  margin: 0% 2%;
 }
 
 .footer-header {
