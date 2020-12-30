@@ -50,7 +50,7 @@ const ExperienceView = () => {
                       setExpIndex(carouselRef.getCurrentIndex())
                     }
                   >
-                    {ExperienceConfig.map((config) => {
+                    {ExperienceConfig.map((config, eIndex) => {
                       const {
                         floatingPaperCss,
                         img,
@@ -62,6 +62,7 @@ const ExperienceView = () => {
                         <FloatingPaper
                           colored={false}
                           customCss={floatingPaperCss}
+                          key={`exp-paper-${eIndex}`}
                         >
                           <div
                             className="floating-image-container"
@@ -102,14 +103,15 @@ const ExperienceView = () => {
                 classes={{ root: "exp-text-root" }}
               >
                 <ul className="exp-list">
-                  {ExperienceConfig.map((exp, index) => {
+                  {ExperienceConfig.map((exp, eIndex) => {
                     return (
-                      expIndex == index &&
-                      exp.expText.map((text) => (
+                      expIndex == eIndex &&
+                      exp.expText.map((text, tindex) => (
                         <Typography
                           color="textPrimary"
                           variant="h6"
                           className="exp-text"
+                          key={`exp-paper-${eIndex}-${tindex}`}
                         >
                           <li>{text}</li>
                         </Typography>

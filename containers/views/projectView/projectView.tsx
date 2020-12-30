@@ -35,14 +35,15 @@ const ProjectView = () => {
               classes={{ root: "proj-text-root" }}
             >
               <div>
-                {ProjectConfig.map((proj, index) => {
+                {ProjectConfig.map((proj, pindex) => {
                   return (
-                    projIndex == index &&
-                    proj.description.map((text) => (
+                    projIndex == pindex &&
+                    proj.description.map((text, tindex) => (
                       <Typography
                         color="primary"
                         variant="h6"
                         className="proj-text"
+                        key={`project-text-${pindex}-${tindex}`}
                       >
                         {text}
                       </Typography>

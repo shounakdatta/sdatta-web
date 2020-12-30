@@ -7,7 +7,7 @@ const FooterView = () => {
   return (
     <div className="footer-container">
       <Grid container spacing={2}>
-        <Grid item lg={4} md={4} sm={12} xs={12} justify="center">
+        <Grid item lg={4} md={4} sm={12} xs={12}>
           <Typography
             color="textPrimary"
             variant="h5"
@@ -30,7 +30,7 @@ const FooterView = () => {
             </Typography>
           </a>
         </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12} justify="center">
+        <Grid item lg={4} md={4} sm={12} xs={12}>
           <Typography
             color="textPrimary"
             variant="h5"
@@ -48,7 +48,7 @@ const FooterView = () => {
             Toronto, ON
           </Typography>
         </Grid>
-        <Grid item lg={4} md={4} sm={12} xs={12} justify="center">
+        <Grid item lg={4} md={4} sm={12} xs={12}>
           <Typography
             color="textPrimary"
             variant="h5"

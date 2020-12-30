@@ -12,6 +12,8 @@
 .toolBarRoot {
   box-shadow: none !important;
   background-color: rgba(1, 0, 32, 0.9) !important;
+  width: 100vw !important;
+  left: 0 !important;
 }
 
 .toolBar {
@@ -32,4 +34,21 @@
 
 .navbar-link {
   margin-left: 20%;
+}
+
+.drawer-link {
+  margin: 0%;
+}
+
+.drawer-a-link {
+  text-decoration: none;
+}
+
+.drawer-root {
+  background-color: rgba(1, 0, 32, 0.9) !important;
+}
+
+.drawer-divider {
+  background-color: #999999 !important;
+  margin: 0% 10% !important;
 }
