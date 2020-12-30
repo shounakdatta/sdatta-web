@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Head>
         <link
           rel="shortcut icon"
-          href="/assets/favicon.ico"
+          href="/assets/Favicon.ico"
           type="image/x-icon"
         />
       </Head>
