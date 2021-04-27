@@ -10,7 +10,7 @@ import {
 } from "../containers/views";
 import { Navbar } from "../containers/components";
 import theme from "../theme";
-import "../public/css/index.css";
+import "./index.css";
 
 const Home: NextPage = () => {
   return (
