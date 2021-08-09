@@ -21,6 +21,11 @@ const Home: NextPage = () => {
           href="/assets/Favicon.ico"
           type="image/x-icon"
         />
+        <title>Shounak Datta</title>
+        <meta name="description" content="Who is Shounak? Why do I care? What is he up to?"/>
+        <meta name="keywords" content="Shounak, Datta, Software, Engineering, Developer"/>
+        <meta property="og:title" content="Shounak Datta"/>
+        <meta property="og:image" content="/assets/sdev-logo.png"/>
       </Head>
       <div className="home-container">
         <Navbar />
