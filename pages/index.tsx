@@ -22,8 +22,8 @@ const Home: NextPage = () => {
           type="image/x-icon"
         />
         <title>Shounak Datta</title>
-        <meta name="description" content="Who is Shounak? Why do I care? What is he up to?"/>
-        <meta name="keywords" content="Shounak, Datta, Software, Engineering, Developer"/>
+        <meta name="description" content="Who is Shounak? What is he up to? Why do I care?" />
+        <meta name="keywords" content="Shounak, Datta, Software, Engineer, Developer" />
         <meta property="og:title" content="Shounak Datta"/>
         <meta property="og:image" content="/assets/sdev-logo.png"/>
       </Head>
