@@ -26,6 +26,7 @@ const Home: NextPage = () => {
         <meta name="keywords" content="Shounak, Datta, Software, Engineer, Developer" />
         <meta property="og:title" content="Shounak Datta"/>
         <meta property="og:image" content="/assets/sdev-logo.png"/>
+        <meta name="twitter:image:src" content="/assets/sdev-logo.png"></meta>
       </Head>
       <div className="home-container">
         <Navbar />
