@@ -1,34 +1,11 @@
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-  }
-  to {
-    opacity: 100;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.floating-paper-1 {
-  animation: ease-in 0.5s fadein forwards;
-}
-
-.floating-paper-2 {
-  animation: ease-in 1s fadein forwards;
-}
-
-.floating-paper-3 {
-  animation: ease-in 1.25s fadein forwards;
-}
-
-.floating-child-container {
+.floatingChildContainer {
   width: 90%;
   min-height: 50px;
   padding: 5%;
   height: 100%;
 }
 
-.floating-colored-child-container {
+.floatingColoredChildContainer {
   width: 90%;
   height: 300px;
   padding: 5%;
@@ -40,44 +17,44 @@
   cursor: pointer;
 }
 
-.root-colored {
+.rootColored {
   height: 100%;
   background-color: #0cbaba;
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 100%);
   cursor: pointer;
 }
 
-.root-colored:hover {
+.rootColored:hover {
   background-color: #0cbaba;
   background-image: linear-gradient(315deg, #0cbaba 50%, #380036 100%);
 }
 
 @media only screen and (max-width: 2560px) {
-  .floating-colored-child-container {
+  .floatingColoredChildContainer {
     height: 275px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
-  .floating-colored-child-container {
+  .floatingColoredChildContainer {
     height: 225px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .floating-colored-child-container {
+  .floatingColoredChildContainer {
     height: 250px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .floating-colored-child-container {
+  .floatingColoredChildContainer {
     height: 250px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .floating-colored-child-container {
+  .floatingColoredChildContainer {
     height: 225px;
   }
 }

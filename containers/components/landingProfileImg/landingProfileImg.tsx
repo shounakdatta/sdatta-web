@@ -1,15 +1,18 @@
 import React from "react";
-import "./landingProfileImg.module.css";
+import styles from "./landingProfileImg.module.css";
+import Fade from "@material-ui/core/Fade";
 
 const LandingProfileImg = (props) => {
   const { imgPath, alt } = props;
   return (
-    <div className="profile-img-container">
-      <img
-        className="image"
-        src={imgPath ?? "/assets/shounak.jpg"}
-        alt={alt ?? "Shounak's Profile Picture"}
-      />
+    <div className={styles.profileImgContainer}>
+      <Fade in={true} timeout={500}>
+        <img
+          className={styles.profileImg}
+          src={imgPath ?? "/assets/shounak.jpg"}
+          alt={alt ?? "Shounak's Profile Picture"}
+        />
+      </Fade>
     </div>
   );
 };

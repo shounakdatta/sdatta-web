@@ -5,34 +5,38 @@ import Grid from "@material-ui/core/Grid";
 import ReactCardCarousel from "react-card-carousel";
 import { FloatingPaper } from "../../components";
 import { ProjectConfig } from "./projectConfig";
-import "./projectView.module.css";
+import styles from "./projectView.module.css";
 
 const ProjectView = () => {
   let carouselRef;
   const [projIndex, setProjIndex] = useState(0);
   return (
     <Element name="projectScroll">
-      <div className="proj-container">
-        <div className="proj-content">
+      <div className={styles.projContainer}>
+        <div className={styles.projContent}>
           <Grid container spacing={3}>
             <Grid item xs={12}>
               <Typography
                 color="primary"
                 variant="h4"
-                classes={{ root: "proj-header" }}
+                classes={{ root: styles.projHeader }}
               >
                 Projects
               </Typography>
             </Grid>
           </Grid>
-          <Grid container spacing={10} classes={{ root: "proj-content-root" }}>
+          <Grid
+            container
+            spacing={10}
+            classes={{ root: styles.projContentRoot }}
+          >
             <Grid
               item
               lg={7}
               md={6}
               sm={12}
               xs={12}
-              classes={{ root: "proj-text-root" }}
+              classes={{ root: styles.projTextRoot }}
             >
               <div>
                 {ProjectConfig.map((proj, pindex) => {
@@ -42,7 +46,7 @@ const ProjectView = () => {
                       <Typography
                         color="primary"
                         variant="h6"
-                        className="proj-text"
+                        className={styles.projText}
                         key={`project-text-${pindex}-${tindex}`}
                       >
                         {text}
@@ -58,9 +62,9 @@ const ProjectView = () => {
               md={6}
               sm={12}
               xs={12}
-              classes={{ root: "carousel-root" }}
+              classes={{ root: styles.carouselRoot }}
             >
-              <div className="carousel-container">
+              <div className={styles.carouselContainer}>
                 <ReactCardCarousel
                   autoplay={true}
                   autoplay_speed={10000}
@@ -90,19 +94,19 @@ const ProjectView = () => {
                         customCss={floatingPaperCss}
                       >
                         <div
-                          className="floating-image-container"
+                          className={styles.floatingImageContainer}
                           style={imgContainerCss}
                         >
                           <img
                             src={img.src}
                             alt={img.alt}
-                            className="floating-image"
+                            className={styles.floatingImage}
                           />
                         </div>
                         <Typography
                           color="primary"
                           variant="h6"
-                          classes={{ root: "carousel-header" }}
+                          classes={{ root: styles.carouselHeader }}
                         >
                           {paperHeader}
                         </Typography>
@@ -110,7 +114,7 @@ const ProjectView = () => {
                           color="secondary"
                           variant="body1"
                           align="center"
-                          classes={{ root: "carousel-header" }}
+                          classes={{ root: styles.carouselHeader }}
                         >
                           {paperSubHeader}
                         </Typography>

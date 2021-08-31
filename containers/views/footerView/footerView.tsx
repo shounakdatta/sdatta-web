@@ -4,33 +4,36 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import Typography from "@material-ui/core/Typography";
-import "./footerView.module.css";
+import styles from "./footerView.module.css";
 
 const FooterView = () => {
   return (
-    <div className="footer-container">
+    <div className={styles.footerContainer}>
       <Typography
         color="textPrimary"
         variant="h6"
-        classes={{ root: "footer-text" }}
+        classes={{ root: styles.footerText }}
         align="center"
       >
         &#169; Shounak Datta
       </Typography>
-      <div className="footer-link-container">
-        <a className="footer-link" href="mailto:shounak14datta@gmail.com">
+      <div className={styles.footerLinkContainer}>
+        <a className={styles.footerLink} href="mailto:shounak14datta@gmail.com">
           <MailIcon style={{ height: 25, color: "#ffffff" }} />
         </a>
         <a
-          className="footer-link"
+          className={styles.footerLink}
           href="https://www.linkedin.com/in/shounakdatta/"
         >
           <LinkedInIcon style={{ height: 25, color: "#ffffff" }} />
         </a>
-        <a className="footer-link" href="https://github.com/shounakdatta">
+        <a className={styles.footerLink} href="https://github.com/shounakdatta">
           <GitHubIcon style={{ height: 25, color: "#ffffff" }} />
         </a>
-        <a className="footer-link" href="https://twitter.com/datta_shounak">
+        <a
+          className={styles.footerLink}
+          href="https://twitter.com/datta_shounak"
+        >
           <TwitterIcon style={{ height: 25, color: "#ffffff" }} />
         </a>
       </div>

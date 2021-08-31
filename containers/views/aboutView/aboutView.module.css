@@ -1,4 +1,4 @@
-.about-container {
+.aboutContainer {
   min-height: 400px;
   padding: 5%;
   width: 90%;
@@ -9,16 +9,16 @@
   align-items: center;
 }
 
-.about-content {
+.aboutContent {
   width: 100%;
 }
 
-.about-header {
+.aboutHeader {
   font-weight: 300 !important;
   margin: 0px !important;
 }
 
-.about-text {
+.aboutText {
   font-weight: 300 !important;
   margin-top: 2% !important;
 }

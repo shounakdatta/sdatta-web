@@ -1,4 +1,4 @@
-.logo-container {
+.logoContainer {
   height: 64px;
   display: flex;
   align-items: center;
@@ -26,29 +26,29 @@
   cursor: pointer;
 }
 
-.link-container {
+.linkContainer {
   display: flex;
   justify-content: flex-end;
   margin-right: 2%;
 }
 
-.navbar-link {
+.navbarLink {
   margin-left: 20%;
 }
 
-.drawer-link {
+.drawerLink {
   margin: 0%;
 }
 
-.drawer-a-link {
+.drawerALink {
   text-decoration: none;
 }
 
-.drawer-root {
+.drawerRoot {
   background-color: rgba(1, 0, 32, 0.9) !important;
 }
 
-.drawer-divider {
+.drawerDivider {
   background-color: #999999 !important;
   margin: 0% 10% !important;
 }

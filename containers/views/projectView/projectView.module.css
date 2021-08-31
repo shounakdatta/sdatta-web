@@ -1,4 +1,4 @@
-.proj-container {
+.projContainer {
   min-height: 350px;
   height: 100%;
   padding: 5%;
@@ -9,11 +9,11 @@
   background-color: #eeeeee;
 }
 
-.proj-content {
+.projContent {
   width: 100%;
 }
 
-.proj-content-root {
+.projContentRoot {
   margin-top: 3% !important;
   height: 80%;
   width: 100% !important;
@@ -21,84 +21,113 @@
   margin-left: 0px !important;
 }
 
-.proj-text-root {
+.projTextRoot {
   display: flex;
   align-items: center;
 }
 
-.proj-header {
+.projHeader {
   display: flex;
   justify-content: center;
   margin-top: 0px;
   font-weight: 300 !important;
 }
 
-.proj-text {
+.projText {
   font-weight: 300 !important;
   margin-top: 2% !important;
   animation: ease-in 0.3s fadein forwards;
 }
 
+.floatingImageContainer {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.floatingImage {
+  max-width: 90%;
+  height: 100%;
+}
+
+.carouselHeader {
+  font-weight: 300 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: middle;
+}
+
 @media only screen and (max-width: 1440px) {
-  .proj-container {
+  .projContainer {
     height: 450px;
   }
 
-  .proj-back-tint {
+  .projBackTint {
     height: 450px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .proj-container {
+  .projContainer {
     height: 600px;
   }
 
-  .proj-back-tint {
+  .projBackTint {
     height: 600px;
   }
 }
 
 @media only screen and (max-width: 960px) {
-  .proj-container {
+  .projContainer {
     height: 650px;
   }
 
-  .proj-back-tint {
+  .projBackTint {
     height: 650px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .proj-container {
+  .projContainer {
     height: 700px;
   }
 
-  .proj-back-tint {
+  .projBackTint {
     height: 700px;
   }
 }
 
 @media only screen and (max-width: 510px) {
-  .proj-container {
+  .projContainer {
     height: 850px;
   }
 
-  .proj-back-tint {
+  .projBackTint {
     height: 850px;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .proj-container {
+  .projContainer {
     height: 1100px;
   }
 
-  .proj-text-root {
+  .projTextRoot {
     margin-bottom: 10% !important;
   }
 
-  .proj-back-tint {
+  .projBackTint {
     height: 950px;
   }
 }

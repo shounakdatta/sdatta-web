@@ -3,13 +3,13 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { LandingProfileImg } from "../../components";
 import { Element } from "react-scroll";
-import "./aboutView.module.css";
+import styles from "./aboutView.module.css";
 
 const AboutView = () => {
   return (
     <Element name="aboutScroll">
-      <div className="about-container">
-        <div className="about-content">
+      <div className={styles.aboutContainer}>
+        <div className={styles.aboutContent}>
           <Grid container spacing={3}>
             <Grid item lg={4} md={6} sm={12} xs={12}>
               <LandingProfileImg />
@@ -18,11 +18,15 @@ const AboutView = () => {
               <Typography
                 color="primary"
                 variant="h4"
-                classes={{ root: "about-header" }}
+                classes={{ root: styles.aboutHeader }}
               >
                 About Me
               </Typography>
-              <Typography color="primary" variant="h6" className="about-text">
+              <Typography
+                color="primary"
+                variant="h6"
+                className={styles.aboutText}
+              >
                 Problems and solutions go hand in hand. <br />
                 It is my passion to bring them together. I innovate. <br />
                 <br />

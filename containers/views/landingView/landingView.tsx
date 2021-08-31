@@ -4,30 +4,30 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Particles from "react-particles-js";
 import { FloatingPaper } from "../../components";
-import "./landingView.module.css";
+import styles from "./landingView.module.css";
 import particleConfig from "./particleConfig";
 
 const LandingView = () => {
   return (
-    <div className="landing-container">
-      <div className="particle-container">
-        <Particles className="particle-effect" params={particleConfig} />
+    <div className={styles.landingContainer}>
+      <div className={styles.particleContainer}>
+        <Particles className={styles.particleEffect} params={particleConfig} />
       </div>
-      <div className="landing-content">
+      <div className={styles.landingContent}>
         <Grid container spacing={1}>
           <Grid item xs={12}>
-            <div className="welcome-title-container">
+            <div className={styles.welcomeTitleContainer}>
               <Typography color="textPrimary" variant="h4">
                 Welcome
               </Typography>
             </div>
           </Grid>
           <Grid item xs={12}>
-            <div className="welcome-subtitle-container">
+            <div className={styles.welcomeSubtitleContainer}>
               <Typography
                 color="textSecondary"
                 variant="h5"
-                classes={{ root: "welcome-sub-text" }}
+                classes={{ root: styles.welcomeSubText }}
               >
                 Select a Quick Link Below
               </Typography>
@@ -38,7 +38,7 @@ const LandingView = () => {
           container
           spacing={3}
           justify="center"
-          className="quick-link-container"
+          className={styles.quickLinkContainer}
         >
           <Grid item lg={4} md={4} sm={4} xs={10}>
             <ScrollLink
@@ -53,17 +53,17 @@ const LandingView = () => {
               ignoreCancelEvents={false}
             >
               <FloatingPaper colored={true} gridPos={1}>
-                <div className="floating-image-container">
+                <div className={styles.floatingImageContainer}>
                   <img
                     src="/assets/sdev-logo.png"
                     alt=""
-                    className="floating-image"
+                    className={styles.floatingImage}
                   />
                 </div>
                 <Typography
                   color="textPrimary"
                   variant="h6"
-                  classes={{ root: "paper-header" }}
+                  classes={{ root: styles.paperHeader }}
                 >
                   About Me
                 </Typography>
@@ -94,17 +94,17 @@ const LandingView = () => {
               ignoreCancelEvents={false}
             >
               <FloatingPaper colored={true} gridPos={2}>
-                <div className="floating-image-container">
+                <div className={styles.floatingImageContainer}>
                   <img
                     src="/assets/experience4.jpg"
                     alt=""
-                    className="floating-image"
+                    className={styles.floatingImage}
                   />
                 </div>
                 <Typography
                   color="textPrimary"
                   variant="h6"
-                  classes={{ root: "paper-header" }}
+                  classes={{ root: styles.paperHeader }}
                 >
                   Work Experience
                 </Typography>
@@ -135,17 +135,17 @@ const LandingView = () => {
               ignoreCancelEvents={false}
             >
               <FloatingPaper colored={true} gridPos={3}>
-                <div className="floating-image-container">
+                <div className={styles.floatingImageContainer}>
                   <img
                     src="/assets/projects2.png"
                     alt=""
-                    className="floating-image"
+                    className={styles.floatingImage}
                   />
                 </div>
                 <Typography
                   color="textPrimary"
                   variant="h6"
-                  classes={{ root: "paper-header" }}
+                  classes={{ root: styles.paperHeader }}
                 >
                   Projects
                 </Typography>

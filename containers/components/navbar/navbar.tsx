@@ -21,7 +21,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import Slide from "@material-ui/core/Slide";
-import "./navbar.module.css";
+import styles from "./navbar.module.css";
 import { Twitter } from "@material-ui/icons";
 
 const HideOnScroll = (props) => {
@@ -80,7 +80,7 @@ export default function Navbar() {
         duration={500}
         isDynamic={true}
         ignoreCancelEvents={false}
-        className={drawer ? "drawer-link" : "navbar-link"}
+        className={drawer ? styles.drawerLink : styles.navbarLink}
       >
         {children}
       </ScrollLink>
@@ -108,7 +108,7 @@ export default function Navbar() {
           </ScrollLinkParent>
         ))}
       </List>
-      <Divider classes={{ root: "drawer-divider" }} />
+      <Divider classes={{ root: styles.drawerDivider }} />
       <List>
         {[
           ["Email", "mailto:shounak14datta@gmail.com"],
@@ -116,7 +116,7 @@ export default function Navbar() {
           ["Github", "https://github.com/shounakdatta"],
           ["Twitter", "https://twitter.com/datta_shounak"],
         ].map(([text, link], index) => (
-          <a href={link} className="drawer-a-link">
+          <a href={link} className={styles.drawerALink}>
             <ListItem button key={text}>
               <ListItemIcon>
                 {getDrawerIcons(index + 3, { style: { color: "ffffff" } })}
@@ -135,26 +135,26 @@ export default function Navbar() {
   return (
     <div>
       <HideOnScroll>
-        <AppBar position="fixed" classes={{ root: "toolBarRoot" }}>
-          <Toolbar className="toolBar">
+        <AppBar position="fixed" classes={{ root: styles.toolBarRoot }}>
+          <Toolbar className={styles.toolBar}>
             <div
-              className="logo-container"
+              className={styles.logoContainer}
               style={{ height: 64, width: "50%" }}
             >
               <img
                 src="/assets/sign.png"
                 alt=""
-                className="logo"
+                className={styles.logo}
                 style={{ height: "80%", margin: "20% 0%" }}
               />
             </div>
             {!mobileView && (
-              <div className="link-container">
+              <div className={styles.linkContainer}>
                 <ScrollLinkParent target="aboutScroll">
                   <Typography
                     variant="h6"
                     color="textPrimary"
-                    classes={{ root: "toolBarText" }}
+                    classes={{ root: styles.toolBarText }}
                   >
                     About
                   </Typography>
@@ -163,7 +163,7 @@ export default function Navbar() {
                   <Typography
                     variant="h6"
                     color="textPrimary"
-                    classes={{ root: "toolBarText" }}
+                    classes={{ root: styles.toolBarText }}
                   >
                     Experience
                   </Typography>
@@ -172,7 +172,7 @@ export default function Navbar() {
                   <Typography
                     variant="h6"
                     color="textPrimary"
-                    classes={{ root: "toolBarText" }}
+                    classes={{ root: styles.toolBarText }}
                   >
                     Projects
                   </Typography>
@@ -180,7 +180,7 @@ export default function Navbar() {
               </div>
             )}
             {mobileView && (
-              <div className="menu-button-container">
+              <div>
                 <IconButton onClick={() => setDrawerView(true)}>
                   <MenuIcon style={{ color: "#ffffff" }} />
                 </IconButton>
@@ -189,7 +189,7 @@ export default function Navbar() {
                   open={showDrawer}
                   onOpen={() => setDrawerView(true)}
                   onClose={() => setDrawerView(false)}
-                  classes={{ paper: "drawer-root" }}
+                  classes={{ paper: styles.drawerRoot }}
                 >
                   {list()}
                 </Drawer>

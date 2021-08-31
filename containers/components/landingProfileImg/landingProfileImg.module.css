@@ -1,4 +1,4 @@
-.profile-img-container {
+.profileImgContainer {
   min-height: 400px;
   height: 100%;
   display: flex;
@@ -7,36 +7,10 @@
   position: relative;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 20px, 0);
-  }
-  to {
-    opacity: 100;
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.profile-img-container .image {
+.profileImg {
   border-radius: 10px;
   height: 100%;
   width: auto;
-  opacity: 0;
-  animation: ease-in 0.5s fadein forwards;
   position: absolute;
   z-index: 2;
-}
-
-.profile-img-container .shadow {
-  /* bottom: 50px; amount shadow should extend below main image */
-  margin-top: 50px;
-  filter: blur(20px);
-  border-radius: 10px;
-  height: 65%;
-  width: auto;
-  opacity: 0;
-  animation: ease-in 0.5s fadein forwards;
-  position: absolute;
-  z-index: 1;
 }

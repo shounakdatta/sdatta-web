@@ -1,45 +1,45 @@
-.footer-container {
+.footerContainer {
   width: 96%;
   padding: 2%;
   background-color: rgba(1, 0, 32, 0.9);
 }
 
-.footer-link-container {
+.footerLinkContainer {
   margin-top: 2%;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.footer-link {
+.footerLink {
   margin: 0% 2%;
 }
 
-.footer-header {
+.footerHeader {
   font-weight: 300 !important;
   margin-bottom: 3% !important;
   text-decoration: underline;
 }
 
-.footer-text {
+.footerText {
   font-weight: 300 !important;
 }
 
-.footer-text-link {
+.footerTextLink {
   text-decoration: none;
 }
 
-.left-social {
+.leftSocial {
   display: flex;
   justify-content: flex-end;
 }
 
-.center-social {
+.centerSocial {
   display: flex;
   justify-content: center;
 }
 
-.right-social {
+.rightSocial {
   display: flex;
   justify-content: flex-start;
 }

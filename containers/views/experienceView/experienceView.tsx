@@ -5,37 +5,41 @@ import Grid from "@material-ui/core/Grid";
 import ReactCardCarousel from "react-card-carousel";
 import { FloatingPaper } from "../../components";
 import { ExperienceConfig } from "./experienceConfig";
-import "./experienceView.module.css";
+import styles from "./experienceView.module.css";
 
 const ExperienceView = () => {
   let carouselRef;
   const [expIndex, setExpIndex] = useState(0);
   return (
     <Element name="experienceScroll">
-      <div className="exp-container">
-        <div className="exp-back-tint">
-          <div className="exp-content">
+      <div className={styles.expContainer}>
+        <div className={styles.expBackTint}>
+          <div className={styles.expContent}>
             <Grid container spacing={3}>
               <Grid item xs={12}>
                 <Typography
                   color="textPrimary"
                   variant="h4"
-                  classes={{ root: "exp-header" }}
+                  classes={{ root: styles.expHeader }}
                 >
                   Work Experience
                 </Typography>
               </Grid>
             </Grid>
-            <Grid container spacing={5} classes={{ root: "exp-content-root" }}>
+            <Grid
+              container
+              spacing={5}
+              classes={{ root: styles.expContentRoot }}
+            >
               <Grid
                 item
                 lg={5}
                 md={6}
                 sm={12}
                 xs={12}
-                classes={{ root: "carousel-root" }}
+                classes={{ root: styles.carouselRoot }}
               >
-                <div className="carousel-container">
+                <div className={styles.carouselContainer}>
                   <ReactCardCarousel
                     autoplay={true}
                     autoplay_speed={10000}
@@ -65,26 +69,26 @@ const ExperienceView = () => {
                           key={`exp-paper-${eIndex}`}
                         >
                           <div
-                            className="floating-image-container"
+                            className={styles.floatingImageContainer}
                             style={imgContainerCss}
                           >
                             <img
                               src={img.src}
                               alt={img.alt}
-                              className="floating-image"
+                              className={styles.floatingImage}
                             />
                           </div>
                           <Typography
                             color="primary"
                             variant="h6"
-                            classes={{ root: "carousel-header" }}
+                            classes={{ root: styles.carouselHeader }}
                           >
                             {paperHeader}
                           </Typography>
                           <Typography
                             color="secondary"
                             variant="body1"
-                            classes={{ root: "carousel-header" }}
+                            classes={{ root: styles.carouselHeader }}
                           >
                             {paperSubHeader}
                           </Typography>
@@ -100,9 +104,9 @@ const ExperienceView = () => {
                 md={6}
                 sm={12}
                 xs={12}
-                classes={{ root: "exp-text-root" }}
+                classes={{ root: styles.expTextRoot }}
               >
-                <ul className="exp-list">
+                <ul className={styles.expList}>
                   {ExperienceConfig.map((exp, eIndex) => {
                     return (
                       expIndex == eIndex &&
@@ -110,7 +114,7 @@ const ExperienceView = () => {
                         <Typography
                           color="textPrimary"
                           variant="h6"
-                          className="exp-text"
+                          className={styles.expText}
                           key={`exp-paper-${eIndex}-${tindex}`}
                         >
                           <li>{text}</li>
