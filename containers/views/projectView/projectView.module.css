@@ -36,7 +36,6 @@
 .projText {
   font-weight: 300 !important;
   margin-top: 2% !important;
-  animation: ease-in 0.3s fadein forwards;
 }
 
 .floatingImageContainer {
